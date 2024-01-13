@@ -16,11 +16,6 @@ frame.pack(pady=20, padx=60, fill="both", expand=True)
 label = customtkinter.CTkLabel(master=frame, text="BioCalculator", font=('',20))
 label.pack(pady=12, padx=10)
 
-my_image = customtkinter.CTkImage(dark_image=Image.open("dna.png"),
-                                  size=(30, 30))
-button = customtkinter.CTkButton(master=frame, image=my_image)
-#button.pack(pady=12, padx=10)
-
 # Choose dataset from falling menu
 datasets_dir = os.getcwd() + '/Datasets'
 files = os.listdir(datasets_dir)
